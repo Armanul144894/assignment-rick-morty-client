@@ -1,0 +1,50 @@
+.cast-title p {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.cast-title a {
+  text-decoration: none;
+}
+.view-btn {
+  box-sizing: border-box;
+  padding: 10px 24px;
+  gap: 10px;
+  width: 116px;
+  height: 42px;
+  border: 1px solid #9dfe00;
+  border-radius: 8px;
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.cast-card {
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3.77917px);
+  border-radius: 12.0933px;
+}
+
+.character-img {
+  width: 258px;
+  height: 216px;
+  border-radius: 3.77917px;
+}
+.cast-card p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  color: #ffffff;
+}
