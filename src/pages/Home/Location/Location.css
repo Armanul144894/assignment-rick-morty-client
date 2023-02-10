@@ -1,0 +1,12 @@
+.location-container {
+  background-image: url("../../../assets/home/Spiral.png");
+  background-repeat: no-repeat;
+  background-position: right 0;
+  background-size: 30%;
+}
+
+.background {
+  background-image: url("../../../assets/home/Star.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
