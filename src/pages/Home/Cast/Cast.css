@@ -29,7 +29,10 @@
 }
 
 .cast-card {
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%);
   box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(3.77917px);
   border-radius: 12.0933px;
 }

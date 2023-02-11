@@ -44,13 +44,13 @@ const Cast = () => {
       >
         {allCharacters.map((characters) => (
           <Carousel.Item key={characters.id}>
-            <div className="cast-card p-2">
+            <div className="cast-card p-3">
               <img
                 className="character-img w-full"
                 src={characters.image}
                 alt=""
               />
-              <p className="mt-2">{characters.name}</p>
+              <p className="py-2">{characters.name}</p>
             </div>
           </Carousel.Item>
         ))}

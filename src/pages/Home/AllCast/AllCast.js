@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo/Logo1.png";
+import "./AllCast.css";
 
 const AllCast = () => {
   const [allCast, setAllCast] = useState([]);
@@ -10,17 +11,17 @@ const AllCast = () => {
       .then((data) => setAllCast(data.results));
   }, []);
   return (
-    <div className="container mx-auto px-10">
+    <div className="container allCast-container mx-auto px-10 ">
       <div className="grid justify-center">
         <img className="logo" src={logo} alt="" />
       </div>
 
       <h3 className="cast-title text-white">The Cast</h3>
 
-      <div className="grid grid-cols-5 gap-5 ">
+      <div className="grid cast-cards grid-cols-5 gap-5 py-10">
         {allCast.map((cast) => (
           <Link to={`/allCast/castDetails/${cast.id}`}>
-            <div key={cast.id} className=" p-2">
+            <div key={cast.id} className="card-info p-2">
               <img className="character-img w-full" src={cast.image} alt="" />
               <p className="mt-2">{cast.name}</p>
             </div>

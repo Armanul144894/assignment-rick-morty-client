@@ -11,8 +11,8 @@ const Location = () => {
       .then((data) => setAllLocation(data.results));
   }, []);
   return (
-    <div className="container px-10 py-10">
-      <h1 className="text-white mx-4">Location</h1>
+    <div className="container px-10 pb-10">
+      <h1 className="text-white mx-4 location">Location</h1>
 
       <Carousel
         cols={5}
@@ -36,9 +36,11 @@ const Location = () => {
       >
         {allLocation.map((location) => (
           <Carousel.Item key={location.id}>
-            <div className="p-2 h-100 bg-dark">
-              {/* <img src={location.image} alt="" /> */}
-              <p className="text-white my-auto ">{location.name}</p>
+            <div className="card card-compact my-4 location-card shadow-xl">
+              <div className="card-body">
+                <p>#{location.id}</p>
+                <span>{location.name}</span>
+              </div>
             </div>
           </Carousel.Item>
         ))}

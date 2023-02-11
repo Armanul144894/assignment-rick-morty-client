@@ -1,0 +1,35 @@
+.episode {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.episode-card {
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 81%, 79% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 81%, 79% 100%, 0% 100%);
+  box-sizing: border-box;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.episode-card p {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.episode-card span {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #ffffff;
+}

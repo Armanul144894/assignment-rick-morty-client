@@ -1,0 +1,19 @@
+.allCast-container {
+  background-image: url("../../../assets/castDetails/Background.png"),
+    url("../../../assets/castDetails/Star.png");
+  background-position: top, bottom 15% left 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.card-info {
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%);
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3.77917px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 12.0933px;
+}

@@ -13,7 +13,7 @@ const Episode = () => {
   }, []);
   return (
     <div className="mt-5 container mx-auto px-10 py-10">
-      <h1 className="text-white mx-4">Episodes</h1>
+      <h1 className="mx-4 episode">Episodes</h1>
 
       <Carousel
         cols={5}
@@ -39,9 +39,11 @@ const Episode = () => {
       >
         {allEpisodes.map((episodes) => (
           <Carousel.Item key={episodes.id}>
-            <div className="h-100 p-2">
-              <p>{episodes.episode}</p>
-              <h6>{episodes.name}</h6>
+            <div className="card card-compact my-4 episode-card shadow-xl">
+              <div className="card-body">
+                <p>{episodes.episode}</p>
+                <span>{episodes.name}</span>
+              </div>
             </div>
           </Carousel.Item>
         ))}
