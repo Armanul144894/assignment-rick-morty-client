@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import { Card } from "react-bootstrap";
 import Carousel from "react-grid-carousel";
+import "./Episode.css";
 
 const Episode = () => {
   const [allEpisodes, setAllEpisodes] = useState([]);
@@ -11,8 +12,8 @@ const Episode = () => {
       .then((data) => setAllEpisodes(data.results));
   }, []);
   return (
-    <div className="mt-5 container mx-auto">
-      <h1 className="text-white">Episodes</h1>
+    <div className="mt-5 container mx-auto px-10 py-10">
+      <h1 className="text-white mx-4">Episodes</h1>
 
       <Carousel
         cols={5}

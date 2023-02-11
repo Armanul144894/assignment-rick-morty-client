@@ -14,11 +14,11 @@ const Cast = () => {
   }, []);
 
   return (
-    <div className="container mx-auto mt-5">
+    <div className="container mt-5 px-10">
       <div className="flex justify-between mx-4 mb-3 items-center cast-title">
         <p>Meet The Cast</p>
         <Link to="/allCast">
-          <span className=" view-btn">View All</span>
+          <span className="view-btn">View All</span>
         </Link>
       </div>
 
@@ -46,7 +46,7 @@ const Cast = () => {
           <Carousel.Item key={characters.id}>
             <div className="cast-card p-2">
               <img
-                className="character-img w-100"
+                className="character-img w-full"
                 src={characters.image}
                 alt=""
               />

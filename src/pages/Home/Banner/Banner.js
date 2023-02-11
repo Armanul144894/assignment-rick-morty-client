@@ -4,7 +4,7 @@ import "./Banner.css";
 import logo from "../../../assets/logo/Logo1.png";
 const Banner = () => {
   return (
-    <div className="banner-container text-center">
+    <div className="banner-container text-center pb-10">
       <div className="container ">
         <div className="grid justify-center">
           <div className="col-md-6">
@@ -16,11 +16,7 @@ const Banner = () => {
         <div className="grid justify-center">
           <div className="col-md-10">
             <h1 className="header-title">
-              The{" "}
-              <span>
-                Rick & <br /> Morty
-              </span>{" "}
-              Wiki
+              The Rick & <br /> Morty Wiki
             </h1>
           </div>
         </div>

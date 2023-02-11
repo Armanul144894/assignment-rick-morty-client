@@ -30,7 +30,6 @@
 
 .cast-card {
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(3.77917px);
   border-radius: 12.0933px;
 }

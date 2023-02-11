@@ -1,0 +1,7 @@
+.home-container {
+  background-image: url("../../../assets/home/Background.png"),
+    url("../../../assets/home/Star.png"), url("../../../assets/home/Spiral.png");
+  background-repeat: no-repeat;
+  background-position: top, bottom 15% left 80%, right bottom;
+  background-size: 100%, 95%, 30%;
+}

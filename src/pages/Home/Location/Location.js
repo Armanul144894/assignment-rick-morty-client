@@ -11,8 +11,8 @@ const Location = () => {
       .then((data) => setAllLocation(data.results));
   }, []);
   return (
-    <div className="container background">
-      <h1 className="text-white">Location</h1>
+    <div className="container px-10 py-10">
+      <h1 className="text-white mx-4">Location</h1>
 
       <Carousel
         cols={5}
