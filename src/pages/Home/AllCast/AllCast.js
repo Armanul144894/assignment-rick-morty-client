@@ -18,7 +18,7 @@ const AllCast = () => {
 
       <h3 className="cast-title text-2xl text-white mb-5">The Cast</h3>
 
-      <div className="grid cast-cards lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-10 pb-16">
+      <div className="grid cast-cards lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-7 pb-16">
         {allCast.map((cast) => (
           <Link key={cast.id} to={`/allCast/castDetails/${cast.id}`}>
             <div key={cast.id} className="cast-card p-2">
