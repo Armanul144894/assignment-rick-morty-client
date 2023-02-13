@@ -45,7 +45,7 @@ const Cast = () => {
         {allCharacters.map((characters) => (
           <Carousel.Item key={characters.id}>
             <div className="cast-card p-3">
-              <div className="cast-body p-2">
+              <div className="cast-body p-3">
                 {" "}
                 <img
                   className="character-img w-full"

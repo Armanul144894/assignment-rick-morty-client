@@ -11,7 +11,7 @@
     position: relative;
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 81%, 79% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0, 100% 81%, 79% 100%, 0% 100%);
-  height: 96px;
+  height: 80px;
   width: 100%;
   padding: 10px;
   border-radius: 10px;

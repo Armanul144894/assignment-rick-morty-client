@@ -37,7 +37,7 @@ const Location = () => {
         {allLocation.map((location) => (
           <Carousel.Item key={location.id}>
             <div className="card card-compact my-4 location-card shadow-xl">
-              <div className="card-body location-body">
+              <div className="location-body p-4">
                 <p>#{location.id}</p>
                 <span>{location.name}</span>
               </div>

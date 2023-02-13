@@ -22,7 +22,7 @@ const AllCast = () => {
         {allCast.map((cast) => (
           <Link key={cast.id} to={`/allCast/castDetails/${cast.id}`}>
             <div key={cast.id} className="cast-card p-2">
-              <div className="cast-body p-2">
+              <div className="cast-body p-3">
                 <img className="character-img w-full" src={cast.image} alt="" />
                 <p className="mt-2">{cast.name}</p>
               </div>

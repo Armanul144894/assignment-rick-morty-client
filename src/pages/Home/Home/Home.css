@@ -2,6 +2,6 @@
   background-image: url("../../../assets/home/Background.png"),
     url("../../../assets/home/Star.png"), url("../../../assets/home/Spiral.png");
   background-repeat: no-repeat;
-  background-position: top, bottom 17% left 60%, right bottom;
+  background-position: top, bottom 16% left 60%, right bottom;
   background-size: 100%, 95%, 30%;
 }

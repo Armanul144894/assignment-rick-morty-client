@@ -37,7 +37,7 @@ const Episode = () => {
         {allEpisodes.map((episodes) => (
           <Carousel.Item key={episodes.id}>
             <div className="card card-compact my-4 episode-card">
-              <div className="card-body episode-character">
+              <div className="episode-character p-4">
                 <p>{episodes.episode}</p>
                 <span>{episodes.name}</span>
               </div>
