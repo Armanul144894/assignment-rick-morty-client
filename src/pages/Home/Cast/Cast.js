@@ -52,7 +52,7 @@ const Cast = () => {
                   src={characters.image}
                   alt=""
                 />
-                <p className="py-2">{characters.name}</p>
+                <p className="py-3">{characters.name}</p>
               </div>
             </div>
           </Carousel.Item>

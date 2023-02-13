@@ -24,7 +24,7 @@ const AllCast = () => {
             <div key={cast.id} className="cast-card p-2">
               <div className="cast-body p-3">
                 <img className="character-img w-full" src={cast.image} alt="" />
-                <p className="mt-2">{cast.name}</p>
+                <p className="py-3">{cast.name}</p>
               </div>
             </div>
           </Link>

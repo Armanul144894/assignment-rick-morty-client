@@ -2,10 +2,6 @@ import React from "react";
 import { FaRegPlayCircle } from "react-icons/fa";
 import "./Banner.css";
 import logo from "../../../assets/logo/Logo1.png";
-import bubble from "../../../assets/banner/bubble.png";
-import portal from "../../../assets/banner/portal.png";
-import pill from "../../../assets/banner/pill.png";
-import gun from "../../../assets/banner/Gun.png";
 import background from "../../../assets/banner/background.png";
 import { Link } from "react-router-dom";
 const Banner = () => {
