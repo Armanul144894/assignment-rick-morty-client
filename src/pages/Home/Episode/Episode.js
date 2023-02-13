@@ -11,7 +11,7 @@ const Episode = () => {
       .then((data) => setAllEpisodes(data.results));
   }, []);
   return (
-    <div className="mt-5 container px-10 py-10">
+    <div className="mt-5 container mx-auto px-10 py-10">
       <h1 className="mx-4 episode-title">Episodes</h1>
 
       <Carousel
@@ -36,8 +36,8 @@ const Episode = () => {
       >
         {allEpisodes.map((episodes) => (
           <Carousel.Item key={episodes.id}>
-            <div className="card card-compact my-4 episode-card text-white">
-              <div className="card-body">
+            <div className="card card-compact my-4 episode-card">
+              <div className="card-body episode-character">
                 <p>{episodes.episode}</p>
                 <span>{episodes.name}</span>
               </div>

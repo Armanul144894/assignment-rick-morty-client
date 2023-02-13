@@ -14,7 +14,7 @@ const Cast = () => {
   }, []);
 
   return (
-    <div className="container mt-5 px-10">
+    <div className="container mx-auto mt-5 px-10">
       <div className="flex justify-between mx-4 mb-5 items-center cast-title">
         <p>Meet The Cast</p>
         <Link to="/allCast">
@@ -45,12 +45,15 @@ const Cast = () => {
         {allCharacters.map((characters) => (
           <Carousel.Item key={characters.id}>
             <div className="cast-card p-3">
-              <img
-                className="character-img w-full"
-                src={characters.image}
-                alt=""
-              />
-              <p className="py-2">{characters.name}</p>
+              <div className="cast-body p-2">
+                {" "}
+                <img
+                  className="character-img w-full"
+                  src={characters.image}
+                  alt=""
+                />
+                <p className="py-2">{characters.name}</p>
+              </div>
             </div>
           </Carousel.Item>
         ))}

@@ -21,9 +21,11 @@ const AllCast = () => {
       <div className="grid cast-cards lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-10 pb-16">
         {allCast.map((cast) => (
           <Link key={cast.id} to={`/allCast/castDetails/${cast.id}`}>
-            <div key={cast.id} className="card-info p-2">
-              <img className="character-img w-full" src={cast.image} alt="" />
-              <p className="mt-2">{cast.name}</p>
+            <div key={cast.id} className="cast-card p-2">
+              <div className="cast-body p-2">
+                <img className="character-img w-full" src={cast.image} alt="" />
+                <p className="mt-2">{cast.name}</p>
+              </div>
             </div>
           </Link>
         ))}

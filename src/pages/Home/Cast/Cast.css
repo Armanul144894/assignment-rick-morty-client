@@ -29,26 +29,36 @@
 }
 
 .cast-card {
-  display: inline-block;
   position: relative;
-  background: rgba(255, 255, 255, 0.05);
-  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%);
+  width: 100%;
+  height: 265px;
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(3.77917px);
+  background: linear-gradient(45deg, #9dfe00, #14d9e6) ;
+  -webkit-clip-path: polygon(
+    0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%
+  );
+  clip-path: polygon(
+    0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%
+  );
 }
 
-.cast-card::before {
-  content: "";
+.cast-body {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
   border-radius: 10px;
-  border: 1px solid transparent;
-  background: linear-gradient(45deg, #9dfe00, #14d9e6) border-box;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
+  backdrop-filter: blur(3.77917px);
+  background: rgb(43, 42, 42);
+  -webkit-clip-path: polygon(
+    0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%
+  );
+  clip-path: polygon(
+    0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%
+  );
 }
 
 .character-img {

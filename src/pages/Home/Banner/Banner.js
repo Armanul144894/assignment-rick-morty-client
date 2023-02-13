@@ -10,7 +10,7 @@ import background from "../../../assets/banner/background.png";
 import { Link } from "react-router-dom";
 const Banner = () => {
   return (
-    <div className="banner-container text-center pb-10">
+    <div className="banner-container container mx-auto text-center pb-10">
       <div className="container ">
         <div className="grid justify-center">
           <div className="col-md-6">
