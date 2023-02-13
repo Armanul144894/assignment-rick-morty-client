@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { Card } from "react-bootstrap";
 import Carousel from "react-grid-carousel";
 import "./Episode.css";
 
@@ -12,8 +11,8 @@ const Episode = () => {
       .then((data) => setAllEpisodes(data.results));
   }, []);
   return (
-    <div className="mt-5 container mx-auto px-10 py-10">
-      <h1 className="mx-4 episode">Episodes</h1>
+    <div className="mt-5 container px-10 py-10">
+      <h1 className="mx-4 episode-title">Episodes</h1>
 
       <Carousel
         cols={5}
@@ -34,12 +33,10 @@ const Episode = () => {
           },
         ]}
         mobileBreakpoint={400}
-        //   arrowRight={<ArrowBtn type="right" />}
-        //   arrowLeft={<ArrowBtn type="left" />}
       >
         {allEpisodes.map((episodes) => (
           <Carousel.Item key={episodes.id}>
-            <div className="card card-compact my-4 episode-card shadow-xl">
+            <div className="card card-compact my-4 episode-card text-white">
               <div className="card-body">
                 <p>{episodes.episode}</p>
                 <span>{episodes.name}</span>

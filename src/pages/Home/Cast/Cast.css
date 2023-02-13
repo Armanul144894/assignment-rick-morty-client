@@ -1,5 +1,5 @@
 .cast-title p {
-  font-family: "TT Travels";
+  font-family: "'Roboto', sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -19,7 +19,7 @@
   height: 42px;
   border: 1px solid #9dfe00;
   border-radius: 8px;
-  font-family: "TT Travels";
+  font-family: "'Roboto', sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -29,12 +29,26 @@
 }
 
 .cast-card {
+  display: inline-block;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0, 100% 87%, 70% 100%, 0% 100%);
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(3.77917px);
-  border-radius: 12.0933px;
+}
+
+.cast-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(45deg, #9dfe00, #14d9e6) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 
 .character-img {

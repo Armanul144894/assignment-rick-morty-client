@@ -15,7 +15,7 @@ const Cast = () => {
 
   return (
     <div className="container mt-5 px-10">
-      <div className="flex justify-between mx-4 mb-3 items-center cast-title">
+      <div className="flex justify-between mx-4 mb-5 items-center cast-title">
         <p>Meet The Cast</p>
         <Link to="/allCast">
           <span className="view-btn">View All</span>

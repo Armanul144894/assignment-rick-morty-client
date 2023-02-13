@@ -1,5 +1,5 @@
-.location {
-  font-family: "TT Travels";
+.location-title {
+  font-family: "'Roboto', sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -10,14 +10,26 @@
 .location-card {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 81%, 79% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0, 100% 81%, 79% 100%, 0% 100%);
-  box-sizing: border-box;
   height: 96px;
-  background: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.location-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(45deg, #9dfe00, #14d9e6) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 
 .location-card p {
-  font-family: "TT Travels";
+  font-family: "'Roboto', sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -26,7 +38,7 @@
 }
 
 .location-card span {
-  font-family: "TT Travels";
+  font-family: "'Roboto', sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;

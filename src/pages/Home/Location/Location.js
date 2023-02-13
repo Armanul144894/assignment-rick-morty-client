@@ -12,7 +12,7 @@ const Location = () => {
   }, []);
   return (
     <div className="container px-10 pb-10">
-      <h1 className="text-white mx-4 location">Location</h1>
+      <h1 className="text-white mx-4 location-title">Location</h1>
 
       <Carousel
         cols={5}

@@ -5,7 +5,7 @@
   margin-bottom: 26px;
 }
 .header-title {
-  font-family: "TT Travels";
+  font-family: "'Roboto', sans-serif";
   font-style: italic;
   font-weight: 800;
   font-size: 50px;
@@ -13,24 +13,23 @@
   color: #ffffff;
 }
 
+
+
 .watch-btn {
   padding: 17px 25px;
-  gap: 10px;
   height: 58px;
   background: linear-gradient(99.46deg, #9dfe00 -10.9%, #14d9e6 97.14%);
   border-radius: 100px;
-  font-family: "TT Travels";
+  font-family: "'Roboto', sans-serif";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height */
-
   color: #fbf8f3;
 }
 
 .header-text {
-  font-family: "TT Travels";
+  font-family: "'Roboto', sans-serif";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;

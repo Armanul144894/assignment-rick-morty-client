@@ -11,16 +11,16 @@ const AllCast = () => {
       .then((data) => setAllCast(data.results));
   }, []);
   return (
-    <div className="container allCast-container mx-auto px-10 ">
+    <div className="container allCast-container mx-auto px-10">
       <div className="grid justify-center">
         <img className="logo" src={logo} alt="" />
       </div>
 
-      <h3 className="cast-title text-white">The Cast</h3>
+      <h3 className="cast-title text-2xl text-white mb-5">The Cast</h3>
 
-      <div className="grid cast-cards grid-cols-5 gap-5 py-10">
+      <div className="grid cast-cards lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-10 pb-16">
         {allCast.map((cast) => (
-          <Link to={`/allCast/castDetails/${cast.id}`}>
+          <Link key={cast.id} to={`/allCast/castDetails/${cast.id}`}>
             <div key={cast.id} className="card-info p-2">
               <img className="character-img w-full" src={cast.image} alt="" />
               <p className="mt-2">{cast.name}</p>
